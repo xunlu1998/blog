@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "XunLu's Blog",
+  "title": "xunlu的博客",
   "description": "We work for money,but more importantly for the future.",
   // "dest": "public",
   "base":"/blog/",
@@ -48,7 +48,7 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/recoluan",
+            "link": "https://github.com/xunlu1998",
             "icon": "reco-github"
           }
         ]
@@ -94,7 +94,7 @@ module.exports = {
     "author": "XunLu",
     "authorAvatar": "/avatar.png",
     "record": "xxxx",
-    "startYear": "2017"
+    "startYear": "2019"
   },
   "markdown": {
     "lineNumbers": true
