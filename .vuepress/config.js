@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "xunlu的博客",
+  "title": "XunLu's Blog",
   "description": "We work for money,but more importantly for the future.",
   // "dest": "public",
   "base":"/blog/",
