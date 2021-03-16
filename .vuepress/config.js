@@ -1,7 +1,8 @@
 module.exports = {
   "title": "XunLu's Blog",
   "description": "We work for money,but more importantly for the future.",
-  "dest": "public",
+  // "dest": "public",
+  "base":"/blog/",
   "head": [
     [
       "link",
