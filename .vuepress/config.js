@@ -2,7 +2,7 @@ module.exports = {
   "title": "XunLu's Blog",
   "description": "We work for money,but more importantly for the future.",
   "dest": "public",
-  // "base":"/blog/",
+  "base":"/blog/",
   "head": [
     [
       "link",
