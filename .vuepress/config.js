@@ -1,18 +1,18 @@
 const moment = require("moment");
 module.exports = {
-  plugins: [
-    [
-      "@vuepress/last-updated",
-      {
-        transformer: (timestamp, lang) => {
-          // 不要忘了安装 moment
-          const moment = require("moment");
-          moment.locale(lang);
-          return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
-        },
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     "@vuepress/last-updated",
+  //     {
+  //       transformer: (timestamp, lang) => {
+  //         // 不要忘了安装 moment
+  //         const moment = require("moment");
+  //         moment.locale(lang);
+  //         return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
+  //       },
+  //     },
+  //   ],
+  // ],
 
   title: "XunLu's Blog",
   description: "飞向宇宙浩瀚无垠",
