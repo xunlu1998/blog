@@ -1,11 +1,10 @@
 ---
 title: 模块化的发展
 date: 2020-11-10
-sidebar: auto
 tags:
   - Webpack
 categories:
-  - Silicon Valley
+  - SiliconValley
 ---
 
 这不就是最原始的 Web 引入 JavaScript 代码吗，只不过是以不同文件保存不同的功能代码和相关状态数据，这也能叫模块化。

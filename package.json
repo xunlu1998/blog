@@ -11,5 +11,8 @@
     "vuepress": "1.7.1",
     "vuepress-theme-reco": "1.6.1"
   },
-  "description": "We work for money,but more importantly for the future."
+  "description": "We work for money,but more importantly for the future.",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }

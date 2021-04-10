@@ -1,6 +1,21 @@
+const moment = require("moment");
 module.exports = {
+  plugins: [
+    [
+      "@vuepress/last-updated",
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          const moment = require("moment");
+          moment.locale(lang);
+          return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
+        },
+      },
+    ],
+  ],
+
   title: "XunLu's Blog",
-  description: "We work for money,but more importantly for the future.",
+  description: "飞向宇宙浩瀚无垠",
   // "dest": "public",
   // base: "/blog/",
   head: [
@@ -21,6 +36,21 @@ module.exports = {
   ],
   theme: "reco",
   themeConfig: {
+    // 评论配置
+    valineConfig: {
+      appId: "Kc1c0JlFg43C1WV6YAPS74yL-gzGzoHsz", // your appId
+      appKey: "hmoAJbPQOb7fU1aE4v6cV5J1", // your appKey
+    },
+    // vssueConfig: {
+    //   platform: "github",
+    //   owner: "xunlu1998",
+    //   repo: "blog",
+    //   clientId: "16288c69954660d2f0cb",
+    //   clientSecret: "e3a81aef8e7deb94b164e75c855571528c0dece5",
+    // },
+    mode: "light",
+    // 子侧边栏
+    subSidebar: "auto",
     nav: [
       {
         text: "Home",
@@ -34,11 +64,23 @@ module.exports = {
       },
       {
         text: "Docs",
-        icon: "reco-message",
+        icon: "reco-document",
         items: [
           {
-            text: "vuepress-reco",
-            link: "/docs/theme-reco/",
+            text: "Webpack",
+            link: "/docs/webpack/",
+          },
+          {
+            text: "MySQL",
+            link: "/docs/mysql/",
+          },
+          {
+            text: "短的JavaScript",
+            link: "/docs/javascript/",
+          },
+          {
+            text: "Browser",
+            link: "/docs/browser/",
           },
         ],
       },
@@ -55,7 +97,10 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/docs/theme-reco/": ["", "theme", "plugin", "api"],
+      "/docs/mysql/": ["", "theme", "plugin", "api"],
+      "/docs/webpack/": ["", "history", "loader"],
+      "/docs/browser/": ["", "begin"],
+      "/docs/javascript/": ["", "data-type", "closure", "GC"],
     },
     type: "blog",
     blogConfig: {
@@ -75,13 +120,6 @@ module.exports = {
         email: "1156743527@qq.com",
         link: "https://www.recoluan.com",
       },
-      {
-        title: "vuepress-theme-reco",
-        desc: "A simple and beautiful vuepress Blog & Doc theme.",
-        avatar:
-          "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: "https://vuepress-theme-reco.recoluan.com",
-      },
     ],
     logo: "/logo.png",
     search: true,
@@ -89,8 +127,8 @@ module.exports = {
     lastUpdated: "Last Updated",
     author: "XunLu",
     authorAvatar: "/avatar.png",
-    record: "xxxx",
-    startYear: "2019",
+    record: "xunlu的部落格",
+    startYear: "2021",
   },
   markdown: {
     lineNumbers: true,
