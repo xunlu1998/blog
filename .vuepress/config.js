@@ -1,18 +1,45 @@
 const moment = require("moment");
 module.exports = {
-  // plugins: [
-  //   [
-  //     "@vuepress/last-updated",
-  //     {
-  //       transformer: (timestamp, lang) => {
-  //         // 不要忘了安装 moment
-  //         const moment = require("moment");
-  //         moment.locale(lang);
-  //         return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
-  //       },
-  //     },
-  //   ],
-  // ],
+  plugins: [
+    [
+      "@vuepress/last-updated",
+      {
+        transformer: (timestamp, lang) => {
+          const moment = require("moment");
+          moment.locale(lang);
+          return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
+        },
+      },
+    ],
+    // [
+    //   "@vuepress-reco/vuepress-plugin-bulletin-popover",
+    //   {
+    //     body: [
+    //       {
+    //         type: "title",
+    //         content: "欢迎加入QQ交流群 🎉🎉🎉",
+    //         style: "text-aligin: center;",
+    //       },
+    //       {
+    //         type: "image",
+    //         src: "/rvcode_qq.png",
+    //       },
+    //     ],
+    //     footer: [
+    //       {
+    //         type: "button",
+    //         text: "打赏",
+    //         link: "/donate",
+    //       },
+    //       {
+    //         type: "button",
+    //         text: "打赏",
+    //         link: "/donate",
+    //       },
+    //     ],
+    //   },
+    // ],
+  ],
 
   title: "XunLu's Blog",
   description: "飞向宇宙浩瀚无垠",
