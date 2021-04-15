@@ -1,7 +1,7 @@
 ---
 title: 为什么我不喜欢HR
 date: 2021-04-14
-tag:
+tags:
   - 狂人日记
 categories:
   - AboutTime
